@@ -1,15 +1,19 @@
-<html lang="en">
-
-<head>
+<html lang="en"><head>
   <meta charset="utf-8">
   <title>PROJECT SHOP</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
   <style>
+    /* VAG Font Integration */
+    @font-face {
+      font-family: 'VAG';
+      src: url('vag-rounded-next-semibold.ttf') format('truetype');
+    }
+    
     /* CSS-only dropdown to replace JavaScript behavior */
     .dropdown { position: relative; display: inline-block; }
     .dropdown #dropdownMenu { display: none; position: absolute; top: 100%; left: 0; background-color: white; border: 1px solid #ccc; border-radius: 5px; min-width: 200px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); z-index: 1; }
     .dropdown:hover #dropdownMenu { display: block; }
-    .dropdown #dropdownMenu a { display: block; padding: 12px 16px; color: black; text-decoration: none; font-family: math; font-size: 14px; }
+    .dropdown #dropdownMenu a { display: block; padding: 12px 16px; color: black; text-decoration: none; font-family: 'VAG', sans-serif; font-size: 14px; }
     .dropdown #dropdownMenu a:hover { background-color: #f0f0f0; }
   </style>
 </head>
@@ -25,29 +29,28 @@
     padding: 0 20px;
     gap: 30px;
 ">
-    <img src="LOGO2.jpeg" alt="LOGO2.jpeg" style="width: 60px; height: 60px; object-fit: contain;">
+    <img src="LOGO2.jpeg" alt="LOGO2.jpeg" style="width: 125px;height: 95px;object-fit: contain;">
     <div style="display: flex; gap: 40px; flex: 1; align-items: center;">
-      <h1 style="color: black; font-size: 20px; font-family: math; margin: 0; cursor: pointer;">Home</h1>
+      <h1 style="color: black; font-size: 20px; font-family: 'VAG', sans-serif; margin: 0; cursor: pointer;">Home</h1>
       <div class="dropdown" style="position: relative; display: inline-block;">
-        <h2 style="color: black; font-size: 20px; font-family: math; margin: 0; cursor: pointer;">Categories</h2>
+        <h2 style="color: black; font-size: 20px; font-family: 'VAG', sans-serif; margin: 0; cursor: pointer;">Categories</h2>
         <div id="dropdownMenu">
           <a href="#">Rain Shower Heads</a>
           <a href="#">Water Heaters</a>
           <a href="#">Booster Pumps</a>
         </div>
       </div>
-      <h2 style="color: black; font-size: 20px; font-family: math; margin: 0; cursor: pointer;">Offers</h2>
+      <h2 style="color: black; font-size: 20px; font-family: 'VAG', sans-serif; margin: 0; cursor: pointer;">Offers</h2>
     </div>
-    <input type="text" placeholder="Search..."
-      style="width: 150px; height: 35px; padding: 8px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px;">
+    <input type="text" placeholder="Search..." style="width: 150px; height: 35px; padding: 8px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px;">
     <div style="position: relative; cursor: pointer; font-size: 28px;">
       🛒
-      <span
-        style="position: absolute; top: -8px; right: -8px; background-color: red; color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold;">0</span>
+      <span style="position: absolute; top: -8px; right: -8px; background-color: red; color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold;">0</span>
     </div>
   </div>
 
   
-</body>
 
-</html>
+
+
+</body></html>
