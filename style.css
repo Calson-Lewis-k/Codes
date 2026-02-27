@@ -1,0 +1,144 @@
+.cover {
+
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    display: block;
+
+
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown #dropdownMenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover #dropdownMenu {
+    display: block;
+}
+
+.dropdown #dropdownMenu a {
+    display: block;
+    padding: 12px 16px;
+    color: black;
+    text-decoration: none;
+    font-family: math;
+    font-size: 14px;
+}
+
+.dropdown #dropdownMenu a:hover {
+    background-color: #f0f0f0;
+}
+
+
+.section-title {
+    text-align: center;
+    font-family: math;
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.category-card {
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.category-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.category-label {
+    display: block;
+    padding: 12px 0;
+    font-family: math;
+    font-size: 16px;
+    color: #333;
+    border-top: 1px solid #eee;
+}
+
+/* Most popular section */
+.most-popular {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px auto 40px;
+    max-width: 1000px;
+}
+
+.product-card {
+    width: 180px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.product-name {
+    display: block;
+    margin-top: 8px;
+    font-family: math;
+    font-size: 16px;
+    color: #333;
+}
+
+.product-price {
+    display: block;
+    margin-top: 4px;
+    font-family: math;
+    font-size: 14px;
+    color: #666;
+}
