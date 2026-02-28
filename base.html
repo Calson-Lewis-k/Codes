@@ -1,58 +1,36 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PROJECT SHOP</title>
-  <link rel="stylesheet" href="style.css">
-</head><body>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-  <style>
-    /* VAG Font Integration */
-    @font-face {
-      font-family: 'VAG';
-      src: url('vag-rounded-next-semibold.ttf') format('truetype');
-    }
-    
-    /* CSS-only dropdown to replace JavaScript behavior */
-    .dropdown { position: relative; display: inline-block; }
-    .dropdown #dropdownMenu { display: none; position: absolute; top: 100%; left: 0; background-color: white; border: 1px solid #ccc; border-radius: 5px; min-width: 200px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); z-index: 1; }
-    .dropdown:hover #dropdownMenu { display: block; }
-    .dropdown #dropdownMenu a { display: block; padding: 12px 16px; color: black; text-decoration: none; font-family: 'VAG', sans-serif; font-size: 14px; }
-    .dropdown #dropdownMenu a:hover { background-color: #f0f0f0; }
-  </style>
-=======
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; 954366fbfa3c3af790dcc265bf587d414b9b0d0f
+  <link rel="stylesheet" href="styles.css">
+</head>
 
+<body>
 
-
-  <div style="
-    width: 781px;
-    height: 75px;
-    border-radius: 5px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    gap: 30px;
-">
-    <img src="LOGO2.jpeg" alt="LOGO2.jpeg" style="width: 125px;height: 95px;object-fit: contain;">
-    <div style="display: flex; gap: 40px; flex: 1; align-items: center;">
-      <h1 style="color: black; font-size: 20px; font-family: 'VAG', sans-serif; margin: 0; cursor: pointer;">Home</h1>
-      <div class="dropdown" style="position: relative; display: inline-block;">
-        <h2 style="color: black; font-size: 20px; font-family: 'VAG', sans-serif; margin: 0; cursor: pointer;">Categories</h2>
+  <div class="header-container">
+    <img src="LOGO2.jpeg" alt="LOGO2" class="header-logo">
+    <div class="nav-links">
+      <h1 class="nav-item">Home</h1>
+      <div class="dropdown">
+        <h2 class="nav-item">Categories</h2>
         <div id="dropdownMenu">
           <a href="#">Rain Shower Heads</a>
           <a href="#">Water Heaters</a>
           <a href="#">Booster Pumps</a>
         </div>
       </div>
-      <h2 style="color: black; font-size: 20px; font-family: 'VAG', sans-serif; margin: 0; cursor: pointer;">Offers</h2>
+      <h2 class="nav-item">Offers</h2>
     </div>
-    <input type="text" placeholder="Search..." style="width: 150px; height: 35px; padding: 8px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px;">
-    <div style="position: relative; cursor: pointer; font-size: 28px;">
+    <input class="search-box" type="text" placeholder="Search...">
+    <div class="cart-icon">
       🛒
-      <span style="position: absolute; top: -8px; right: -8px; background-color: red; color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold;">0</span>
+      <span class="cart-badge">0</span>
     </div>
   </div>
 
-  
   <img src="9-cover.png" alt="Cover" class="cover">
 
   <h1 class="section-title">Browse By Categories</h1>
@@ -87,69 +65,84 @@
       <img src="idk.jpeg" alt="Booster Pumps">
       <span class="product-name">Instant Electric Water Heater with Inbuilt Booster Pump</span>
       <span class="product-price">Ksh25000</span>
-      
+
     </div>
     <div class="product-card">
       <img src="lol.jpg" alt="Booster Pumps">
       <span class="product-name">Instant Electric Water Heater with Inbuilt Booster Pump</span>
       <span class="product-price">Ksh25000</span>
     </div>
-    <div class="product-card">
-      <img src="damn.jpg" alt="Booster Pumps">
-      <span class="product-name">Instant Electric Water Heater with Inbuilt Booster Pump</span>
-      <span class="product-price">Ksh25000</span>
-    </div>
+    <a href="blackelectricwaterheater.html" target="_blank">
+      <div class="product-card">
+        <img src="damn.jpg" alt="Booster Pumps">
+        <span class="product-name">Instant Electric Water Heater with Inbuilt Booster Pump</span>
+        <span class="product-price">Ksh25000</span>
+      </div>
+    </a>
   </div>
+  <footer>
     <footer style="background-color:#232347; color:white; padding:60px 80px 20px 80px; font-family:Arial, sans-serif;">
 
-  <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap;">
 
-    <!-- LEFT SECTION -->
-    <div style="max-width:350px;">
-      
-      <img src="LOGO2.jpeg" alt="STYKE Merchants Logo" style="width:180px; margin-bottom:20px;">
 
-      <p style="margin-bottom:10px;">Subscribe to our newsletter</p>
+        <div style="max-width:350px;">
 
-      <div style="display:flex; background:white; border-radius:30px; overflow:hidden; width:100%; max-width:350px; margin-bottom:20px;">
-        <input type="email" placeholder="Your email address" style="border:none; padding:12px 15px; flex:1; outline:none;">
-        <button style="background:#ff4b1f; border:none; color:white; padding:0 20px; cursor:pointer;">
-          Subscribe
-        </button>
+          <img src="LOGO2.jpeg" alt="STYKE Merchants Logo" style="width:180px; margin-bottom:20px;">
+
+          <p style="margin-bottom:10px;">Subscribe to our newsletter</p>
+
+          <div
+            style="display:flex; background:white; border-radius:30px; overflow:hidden; width:100%; max-width:350px; margin-bottom:20px;">
+            <input type="email" placeholder="Your email address"
+              style="border:none; padding:12px 15px; flex:1; outline:none;">
+            <button style="background:#ff4b1f; border:none; color:white; padding:0 20px; cursor:pointer;">
+              Subscribe
+            </button>
+          </div>
+
+          <div style="display:flex; gap:15px;">
+            <div
+              style="width:35px; height:35px; border-radius:50%; background:white; color:#232347; display:flex; align-items:center; justify-content:center; font-weight:bold; cursor:pointer;">
+              F</div>
+            <div
+              style="width:35px; height:35px; border-radius:50%; background:white; color:#232347; display:flex; align-items:center; justify-content:center; font-weight:bold; cursor:pointer;">
+              X</div>
+            <div
+              style="width:35px; height:35px; border-radius:50%; background:white; color:#232347; display:flex; align-items:center; justify-content:center; font-weight:bold; cursor:pointer;">
+              I</div>
+            <div
+              style="width:35px; height:35px; border-radius:50%; background:white; color:#232347; display:flex; align-items:center; justify-content:center; font-weight:bold; cursor:pointer;">
+              ▶</div>
+          </div>
+
+        </div>
+
+        <!-- MIDDLE SECTION -->
+        <div>
+          <h3 style="font-weight:normal;">Support</h3>
+          <h3 style="font-weight:normal;">Legal</h3>
+        </div>
+
+        <!-- RIGHT SECTION -->
+        <div>
+          <h3 style="font-weight:normal;">Contact</h3>
+          <p style="margin:10px 0; font-size:14px;">📍 KOONE SHOPPING MALL,<br>GROUND FLOOR, SHOP C12</p>
+          <p style="margin:10px 0; font-size:14px;">✉️ strykes@roamwave.co.ke</p>
+          <p style="margin:10px 0; font-size:14px;">📞 0704624888</p>
+        </div>
+
       </div>
 
-      <div style="display:flex; gap:15px;">
-        <div style="width:35px; height:35px; border-radius:50%; background:white; color:#232347; display:flex; align-items:center; justify-content:center; font-weight:bold; cursor:pointer;">F</div>
-        <div style="width:35px; height:35px; border-radius:50%; background:white; color:#232347; display:flex; align-items:center; justify-content:center; font-weight:bold; cursor:pointer;">X</div>
-        <div style="width:35px; height:35px; border-radius:50%; background:white; color:#232347; display:flex; align-items:center; justify-content:center; font-weight:bold; cursor:pointer;">I</div>
-        <div style="width:35px; height:35px; border-radius:50%; background:white; color:#232347; display:flex; align-items:center; justify-content:center; font-weight:bold; cursor:pointer;">▶</div>
+      <div
+        style="text-align:center; margin-top:50px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.2); font-size:13px;">
+        All Rights Reserved, Roamwave Solutions
       </div>
 
-    </div>
+    </footer>
 
-    <!-- MIDDLE SECTION -->
-    <div>
-      <h3 style="font-weight:normal;">Support</h3>
-      <h3 style="font-weight:normal;">Legal</h3>
-    </div>
+  </footer>
 
-    <!-- RIGHT SECTION -->
-    <div>
-      <h3 style="font-weight:normal;">Contact</h3>
-      <p style="margin:10px 0; font-size:14px;">📍 KOONE SHOPPING MALL,<br>GROUND FLOOR, SHOP C12</p>
-      <p style="margin:10px 0; font-size:14px;">✉️ strykes@roamwave.co.ke</p>
-      <p style="margin:10px 0; font-size:14px;">📞 0704624888</p>
-    </div>
+</body>
 
-  </div>
-
-  <div style="text-align:center; margin-top:50px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.2); font-size:13px;">
-    All Rights Reserved, Roamwave Solutions
-  </div>
-
-</footer>
-
-
-
-
-</body></html>
+</html>
